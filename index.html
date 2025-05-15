@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32"href="./images/favicon-32x32.png" />
+    <title>Frontend Mentor | Browser extensions manager UI</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+     <section class="container">
+        <header>
+            <img class="logo" src="/images/logo.svg" alt="ExtensionsLogo">
+
+            <button id="mode">
+               <img src="/images/icon-sun.svg" alt="mode">
+            </button>
+        </header>
+
+        <main>
+            <div class="list-header">
+                <h2>Extensions List</h2>
+                <div class="filters">
+                    <button class="filter active" data-filter="all">All</button>
+                    <button class="filter" data-filter="active">Active</button>
+                    <button class="filter" data-filter="inactive">Inactive</button>
+                </div>
+            </div>
+
+            <div id="extensionsList">
+                <!-- Cards grid display -->
+            </div>
+        </main>
+     </section>
+    <script src="script.js"></script>
+</body>
+</html>
