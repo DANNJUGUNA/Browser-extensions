@@ -128,11 +128,11 @@ function listExtensions(filter) {
   });
 }
 
-filter.forEach(tab => {
-  tab.addEventListener('click', () => {
-      filter.forEach(tab => tab.classList.remove('active'));
-      tab.classList.add('active');
-      listAll = tab.dataset.filter;
+filter.forEach(option => {
+  option.addEventListener('click', () => {
+      filter.forEach(option => option.classList.remove('active'));
+      option.classList.add('active');
+      listAll = option.dataset.filter;
       listExtensions(listAll);
   });
 });

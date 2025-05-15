@@ -1,17 +1,17 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
     font-family: 'Noto Sans', sans-serif;
-    background: linear-gradient( #040918 0%, #091540 100%);
+    background: linear-gradient( #040918, #091540 100%);
     color: hsl(200, 60%, 99%);
 }
 
 body.light {
-    background: linear-gradient(#EBF2FC 0%, #EEF8F9 100%);
+    background: linear-gradient(#EBF2FC, #EEF8F9 100%);
     color: hsl(227, 75%, 14%);
 }
 
@@ -26,7 +26,7 @@ header {
     background-color: hsl(225, 23%, 24%);
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     padding: 0.6em 12px 0.6em 12px;
     border-radius: 10px;
 }
@@ -35,12 +35,15 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: var(--light-bg)
+    color: white;
+}
+.logo > img{
+    color: white;
 }
 
-#themeBtn {
-    background: none;
+#mode {
     border: none;
+    background: hsl(225, 23%, 24%);
     color: inherit;
     cursor: pointer;
     width: 40px;
