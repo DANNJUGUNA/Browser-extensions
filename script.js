@@ -74,17 +74,21 @@ const extensions = [
   }
 ];
 
+const changeMode = document.getElementById('mode');
+
+changeMode.addEventListener('click', () => {
+  document.body.classList.toggle('light');
+});
+
 const list = document.getElementById('extensionsList');
 const filter = document.querySelectorAll('.filter');
-const changeMode = document.getElementById('mode');
 let listAll= 'all';
 
 function listExtensions(filter) {
   list.innerHTML = '';
   
-  const filtered = filter === 'all' 
-      ? extensions 
-      : extensions.filter(extension => filter === 'active' ? extension.isActive : !extension.isActive);
+  const filtered = filter === 'all'  ? extensions : extensions.filter
+  (extension => filter === 'active' ? extension.isActive : !extension.isActive);
   
   filtered.forEach(extension => {
       const card = document.createElement('div');
@@ -137,8 +141,6 @@ filter.forEach(option => {
   });
 });
 
-changeMode.addEventListener('click', () => {
-  document.body.classList.toggle('light');
-});
+
 
 listExtensions('all');
